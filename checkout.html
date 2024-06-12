@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<title> </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Assets/CSS/Style.css">
+	<link rel="icon" href="Assets/Imagens/logotipo1.png">
+</head>
+<body>
+	<header>
+		<a href="#">
+			<img class="logotipo" src="Assets/Imagens/logotipo1.png" />
+		</a>
+		<nav class="topnav">
+			<a href="index.html"> Home </a>
+			<a href="#cardapio"> Cardápio </a>
+			<a href="#contato"> Contato </a>
+			<hr/>
+		</nav>
+		
+		<section>
+			<h1> Amburguer </h1>
+			<h2> Finalizando Compra </h2>
+		</section>
+	</header>
+	
+	<form action="compra" method="post">
+	     <label for="name" > Nome do Cliente </label><br/>
+		 <input type="text" id="LancheName" ></input><br/>
+		 
+		  <label for="LancheName" > Nome do lanche </label><br/>
+		 <input type="text" id="LancheName" ></input><br/><br/>
+		 
+		   <label for="address" > Endereço </label><br/>
+		 <input type="text" id="address" ></input><br/><br/>
+	
+	      <label for="tel" > Telefone </label><br/>
+		 <input type="tel" id="tel" name="tel"></input><br/>
+		 
+		   <label for="payment" > Forma de Pagamentos </label>
+		 <select type="payment" id="payment" >
+		    <option value="pix">Pix </option>
+		 
+		</select><br/><br/>
+		<input class="btn_comprar" type="submit" value="Finalizar">
+	</form>
+
+	
+	<footer id="contato">
+		<div class="contatos">
+		    <a href="#"></a>
+			<img src="Assets/Imagens/whatsapp.png"/>
+			<p> (12) 9 9999-0000 </p>
+		</div>
+		<div class="contatos">
+		
+			<img src="Assets/Imagens/instagram.png"/>
+			<a target="_blank" href="https://www.instagram.com/stevejobsok/"></a>
+			<p> @amburguer </p>
+		</div>
+	</footer>
+	
+</body>
+</html>
