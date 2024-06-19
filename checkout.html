@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="Assets/CSS/Style.css">
 	<link rel="icon" href="Assets/Imagens/logotipo1.png">
+	<script src="Assets\js\script.js" ></script>
 </head>
 <body>
 	<header>
@@ -25,18 +26,28 @@
 		</section>
 	</header>
 	
-	<form action="compra" method="post">
-	     <label for="name" > Nome do Cliente </label><br/>
-		 <input type="text" id="LancheName" ></input><br/>
+	<form action="https://api.whatsapp.com/send" method="get">
+	
+	     <input type="hidden" name="phone" value="+551299990000">
+		 
+		 <input type="hidden" name="mensagem" value="Pedido de compra"
+		 Name: {{Name}}%0A
+		 LancheName: {{LancheName}}%0A
+		 address: {{address}}%0A
+		 tel: {{tel}}%0A
+	
+	
+	     <label for="Name" > Nome do Cliente </label><br/>
+		 <input type="text" id="Name" name="name" required></input><br/>
 		 
 		  <label for="LancheName" > Nome do lanche </label><br/>
-		 <input type="text" id="LancheName" ></input><br/><br/>
+		 <input type="text" id="LancheName" name="LancheName" required></input><br/><br/>
 		 
 		   <label for="address" > Endereço </label><br/>
-		 <input type="text" id="address" ></input><br/><br/>
+		 <input type="text" id="address" name="address" required></input><br/><br/>
 	
 	      <label for="tel" > Telefone </label><br/>
-		 <input type="tel" id="tel" name="tel"></input><br/>
+		 <input type="tel" id="tel" name="tel" name="tel" required></input><br/>
 		 
 		   <label for="payment" > Forma de Pagamentos </label>
 		 <select type="payment" id="payment" >
